@@ -42,6 +42,25 @@
         "codeRepository": "https://github.com/eduelias/greengrass-ipc",
         "programmingLanguage": "Rust",
         "description": "Pure-Rust async client for AWS IoT Greengrass v2 component IPC."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "bucket-search",
+        "codeRepository": "https://github.com/eduelias/bucket-search",
+        "programmingLanguage": "TypeScript",
+        "description": "npm package that runs SQL queries across entire S3 buckets via S3 Select."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "gha-vacuum",
+        "codeRepository": "https://github.com/eduelias/gha-vacuum",
+        "description": "GitHub Action that runs the vacuum OpenAPI linter in CI."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "docker-jupyter-opencv",
+        "codeRepository": "https://github.com/eduelias/docker-jupyter-opencv",
+        "description": "Zero-setup Docker container with Jupyter and OpenCV for students."
       }
     ]
   }
@@ -135,6 +154,7 @@
       margin-left: 0.75rem;
     }
     .card p { color: var(--muted); line-height: 1.7; font-size: 0.95rem; }
+    .card code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.88em; color: var(--text); }
     .contact { text-align: center; margin-bottom: 1rem; }
     .contact a {
       display: inline-block;
@@ -199,6 +219,34 @@
           <p>A pure-Rust, async client for AWS IoT Greengrass v2 component IPC. No C, no FFI — just
           tokio and typed operations, including ones the official bindings are missing. Safe to call
           from inside subscription callbacks, where the official SDK is not.</p>
+        </div>
+      </a>
+      <a class="card" href="https://github.com/eduelias/bucket-search">
+        <img src="assets/bucket-search.svg" alt="bucket-search — query entire S3 buckets with SQL" loading="lazy">
+        <div class="card-body">
+          <span class="kind">TypeScript · npm</span>
+          <h3>bucket-search</h3>
+          <p>An npm package that runs SQL queries across entire S3 buckets using S3 Select —
+          file by file or simultaneously. Extend one class, call <code>.run()</code>. Published
+          as <code>@eduelias/bucket-search</code>.</p>
+        </div>
+      </a>
+      <a class="card" href="https://github.com/eduelias/gha-vacuum">
+        <img src="assets/gha-vacuum.svg" alt="gha-vacuum — OpenAPI linting in CI" loading="lazy">
+        <div class="card-body">
+          <span class="kind">GitHub Action · CI</span>
+          <h3>gha-vacuum</h3>
+          <p>A GitHub Action that runs the vacuum OpenAPI linter on your specs in CI — failing
+          the build on contract violations before they ever reach code review.</p>
+        </div>
+      </a>
+      <a class="card" href="https://github.com/eduelias/docker-jupyter-opencv">
+        <img src="assets/docker-jupyter-opencv.svg" alt="docker-jupyter-opencv — Jupyter and OpenCV for students, zero setup" loading="lazy">
+        <div class="card-body">
+          <span class="kind">Docker · Education</span>
+          <h3>docker-jupyter-opencv</h3>
+          <p>A zero-setup Docker container with Jupyter and OpenCV, built for students — run one
+          script and the notebook is in your browser, on macOS, Linux, or Windows.</p>
         </div>
       </a>
     </div>

@@ -21,6 +21,14 @@
   async client for AWS IoT Greengrass v2 component IPC (Unix-domain-socket
   eventstream). No C/FFI; tokio-based; implements operations the official
   bindings lack. On crates.io as `greengrass-ipc`. Not affiliated with Amazon.
+- [bucket-search](https://github.com/eduelias/bucket-search): TypeScript npm
+  package (`@eduelias/bucket-search`) that runs SQL queries across entire S3
+  buckets via S3 Select, sequentially or simultaneously. MIT licensed.
+- [gha-vacuum](https://github.com/eduelias/gha-vacuum): GitHub Action that
+  runs the vacuum OpenAPI linter on API specs in CI. MIT licensed.
+- [docker-jupyter-opencv](https://github.com/eduelias/docker-jupyter-opencv):
+  Zero-setup Docker container with Jupyter and OpenCV for students; one script,
+  works on macOS, Linux, and Windows. MIT licensed.
 
 ## Contact
 

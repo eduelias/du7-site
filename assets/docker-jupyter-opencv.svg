@@ -1,0 +1,48 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="docker-jupyter-opencv promotional banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0E0C"/>
+      <stop offset="0.55" stop-color="#0D1712"/>
+      <stop offset="1" stop-color="#16281F"/>
+    </linearGradient>
+    <style>
+      .kicker { font: 700 22px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #4ADE80; letter-spacing: 4px; }
+      .title  { font: 700 64px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #FFFFFF; }
+      .sub    { font: 600 32px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #CFE3D8; }
+      .bullet { font: 400 26px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #E8F0EB; }
+      .footl  { font: 700 22px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #8FAE9E; }
+      .footr  { font: 400 22px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #7E8F87; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <text class="kicker" x="56" y="80">DOCKER · EDUCATION</text>
+
+  <!-- decorative container-with-eye top-right -->
+  <g transform="translate(975,42)" stroke="#4ADE80" stroke-width="2.5" fill="none">
+    <rect x="0" y="40" rx="8" ry="8" width="64" height="52"/>
+    <rect x="72" y="40" rx="8" ry="8" width="64" height="52" stroke-opacity="0.55"/>
+    <rect x="36" y="-8" rx="8" ry="8" width="64" height="40" stroke-opacity="0.75"/>
+    <circle cx="160" cy="104" r="24"/>
+    <circle cx="160" cy="104" r="9" fill="#4ADE80" stroke="none"/>
+  </g>
+
+  <text class="title" x="52" y="160">docker-jupyter-opencv</text>
+
+  <text class="sub" x="56" y="225">Jupyter + OpenCV for students —</text>
+  <text class="sub" x="56" y="268">zero setup, one script, any OS.</text>
+
+  <g fill="#4ADE80">
+    <circle cx="66" cy="352" r="7"/>
+    <circle cx="66" cy="406" r="7"/>
+    <circle cx="66" cy="460" r="7"/>
+  </g>
+  <text class="bullet" x="92" y="361">One run.sh — container up, notebook in the browser</text>
+  <text class="bullet" x="92" y="415">macOS, Linux, and Windows supported out of the box</text>
+  <text class="bullet" x="92" y="469">No Python or OpenCV install pain in the classroom</text>
+
+  <line x1="56" y1="540" x2="1144" y2="540" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="2"/>
+  <text class="footl" x="56" y="588">curl -O … run.sh &amp;&amp; ./run.sh</text>
+  <text class="footr" x="1144" y="588" text-anchor="end">MIT · built for teaching computer vision</text>
+</svg>

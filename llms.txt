@@ -1,0 +1,28 @@
+# Du7 Technology Services
+
+> Independent engineering business (Netherlands, KVK 91476003) doing pragmatic
+> infrastructure, cloud, and IoT work — from Raspberry Pi to AWS. Contact:
+> info@du7.dev. This site is a temporary landing page; the projects below are
+> the best representation of the work.
+
+## Projects
+
+- [rittenregistratie-bot](https://github.com/eduelias/rittenregistratie-bot):
+  Self-hosted WhatsApp bot keeping a Belastingdienst-compliant car trip log
+  (Dutch "rittenregistratie"). Python 3.11+, runs on a Raspberry Pi, writes
+  audit-ready per-year Excel files, plugin system for odometer/trajectory
+  sources. MIT licensed.
+- [nucleus-job-plugin](https://github.com/eduelias/nucleus-job-plugin):
+  Unofficial Rust runner for AWS IoT Jobs on Greengrass v2 devices. Executes
+  allow-listed job handlers and reports status, reaching IoT Core through the
+  Greengrass nucleus's own MQTT connection. Ships as a generic Greengrass
+  component. Not affiliated with Amazon.
+- [greengrass-ipc](https://github.com/eduelias/greengrass-ipc): Pure-Rust
+  async client for AWS IoT Greengrass v2 component IPC (Unix-domain-socket
+  eventstream). No C/FFI; tokio-based; implements operations the official
+  bindings lack. On crates.io as `greengrass-ipc`. Not affiliated with Amazon.
+
+## Contact
+
+- Email: info@du7.dev
+- GitHub: https://github.com/eduelias

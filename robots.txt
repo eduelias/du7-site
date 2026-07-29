@@ -1,0 +1,9 @@
+# du7.dev — all crawlers welcome, including AI agents
+# (GPTBot, ClaudeBot, Claude-User, PerplexityBot, Google-Extended, Applebot-Extended, ...)
+User-agent: *
+Allow: /
+
+# AI-readable site summary
+# https://du7.dev/llms.txt
+
+Sitemap: https://du7.dev/sitemap.xml

@@ -103,7 +103,7 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 1.5rem;
+      overflow: hidden;
       text-align: left;
       display: block;
       text-decoration: none;
@@ -111,6 +111,14 @@
       transition: border-color 0.15s ease, transform 0.15s ease;
     }
     .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1200 / 630;
+      object-fit: cover;
+      border-bottom: 1px solid var(--border);
+    }
+    .card-body { padding: 1.5rem; }
     .card h3 {
       font-size: 1.05rem;
       margin-bottom: 0.5rem;
@@ -164,25 +172,34 @@
     <h2>Projects</h2>
     <div class="projects">
       <a class="card" href="https://github.com/eduelias/rittenregistratie-bot">
-        <span class="kind">Python · WhatsApp</span>
-        <h3>rittenregistratie-bot</h3>
-        <p>A self-hosted WhatsApp bot that keeps a Belastingdienst-compliant trip log for one or
-        more cars. Send an odometer reading and destination; it appends an audit-ready row to a
-        per-year Excel file and replies with a summary. Runs comfortably on a Raspberry Pi.</p>
+        <img src="assets/rittenregistratie-bot.svg" alt="rittenregistratie-bot — log your car trips over WhatsApp" loading="lazy">
+        <div class="card-body">
+          <span class="kind">Python · WhatsApp</span>
+          <h3>rittenregistratie-bot</h3>
+          <p>A self-hosted WhatsApp bot that keeps a Belastingdienst-compliant trip log for one or
+          more cars. Send an odometer reading and destination; it appends an audit-ready row to a
+          per-year Excel file and replies with a summary. Runs comfortably on a Raspberry Pi.</p>
+        </div>
       </a>
       <a class="card" href="https://github.com/eduelias/nucleus-job-plugin">
-        <span class="kind">Rust · AWS IoT</span>
-        <h3>nucleus-job-plugin</h3>
-        <p>An unofficial Rust runner for AWS IoT Jobs on Greengrass devices. Picks up queued jobs,
-        runs allow-listed handlers, and reports status back to the cloud — reaching IoT Core
-        through the nucleus's own connection, as a standalone generic component.</p>
+        <img src="assets/nucleus-job-plugin.jpg" alt="nucleus-job-plugin — AWS IoT Jobs execution for Greengrass" loading="lazy">
+        <div class="card-body">
+          <span class="kind">Rust · AWS IoT</span>
+          <h3>nucleus-job-plugin</h3>
+          <p>An unofficial Rust runner for AWS IoT Jobs on Greengrass devices. Picks up queued jobs,
+          runs allow-listed handlers, and reports status back to the cloud — reaching IoT Core
+          through the nucleus's own connection, as a standalone generic component.</p>
+        </div>
       </a>
       <a class="card" href="https://github.com/eduelias/greengrass-ipc">
-        <span class="kind">Rust · crates.io</span>
-        <h3>greengrass-ipc</h3>
-        <p>A pure-Rust, async client for AWS IoT Greengrass v2 component IPC. No C, no FFI — just
-        tokio and typed operations, including ones the official bindings are missing. Safe to call
-        from inside subscription callbacks, where the official SDK is not.</p>
+        <img src="assets/greengrass-ipc.jpg" alt="greengrass-ipc — pure-Rust async client for Greengrass v2 IPC" loading="lazy">
+        <div class="card-body">
+          <span class="kind">Rust · crates.io</span>
+          <h3>greengrass-ipc</h3>
+          <p>A pure-Rust, async client for AWS IoT Greengrass v2 component IPC. No C, no FFI — just
+          tokio and typed operations, including ones the official bindings are missing. Safe to call
+          from inside subscription callbacks, where the official SDK is not.</p>
+        </div>
       </a>
     </div>
 

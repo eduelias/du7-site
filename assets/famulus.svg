@@ -1,0 +1,66 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="famulus promotional banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0E0C"/>
+      <stop offset="0.55" stop-color="#0D1712"/>
+      <stop offset="1" stop-color="#16281F"/>
+    </linearGradient>
+    <style>
+      .kicker { font: 700 22px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #4ADE80; letter-spacing: 4px; }
+      .title  { font: 700 72px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #FFFFFF; }
+      .sub    { font: 600 32px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #CFE3D8; }
+      .bullet { font: 400 26px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #E8F0EB; }
+      .footl  { font: 700 22px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #8FAE9E; }
+      .footr  { font: 400 22px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #7E8F87; }
+      .plug   { font: 600 20px ui-monospace, 'SF Mono', Menlo, monospace; fill: #9FD8B6; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- kicker -->
+  <text class="kicker" x="56" y="80">SELF-HOSTED AI ASSISTANT</text>
+
+  <!-- decorative: a hub with plugin nodes, top-right -->
+  <g transform="translate(946,40)" stroke="#4ADE80" fill="none" stroke-width="2.5" opacity="0.9">
+    <!-- spokes -->
+    <g stroke-opacity="0.5">
+      <path d="M104 62 L36 24"/>
+      <path d="M104 62 L182 24"/>
+      <path d="M104 62 L30 106"/>
+      <path d="M104 62 L186 108"/>
+    </g>
+    <!-- hub -->
+    <circle cx="104" cy="62" r="26"/>
+    <circle cx="104" cy="62" r="8" fill="#4ADE80" stroke="none"/>
+    <!-- plugin nodes -->
+    <g fill="#0D1712">
+      <rect x="10" y="8" rx="7" width="52" height="30"/>
+      <rect x="158" y="8" rx="7" width="52" height="30"/>
+      <rect x="4"  y="90" rx="7" width="52" height="30"/>
+      <rect x="160" y="92" rx="7" width="52" height="30"/>
+    </g>
+  </g>
+
+  <!-- title -->
+  <text class="title" x="52" y="165">famulus</text>
+
+  <!-- subtitle -->
+  <text class="sub" x="56" y="225">A personal AI assistant on WhatsApp —</text>
+  <text class="sub" x="56" y="268">your models, your tools, your rules.</text>
+
+  <!-- bullets -->
+  <g fill="#4ADE80">
+    <circle cx="66" cy="352" r="7"/>
+    <circle cx="66" cy="406" r="7"/>
+    <circle cx="66" cy="460" r="7"/>
+  </g>
+  <text class="bullet" x="92" y="361">Local LLM via Ollama · official WhatsApp Cloud API</text>
+  <text class="bullet" x="92" y="415">Send, publish and control only after you reply YES</text>
+  <text class="bullet" x="92" y="469">Plugin ecosystem: Gmail · Outlook · LinkedIn · your own</text>
+
+  <!-- footer -->
+  <line x1="56" y1="540" x2="1144" y2="540" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="2"/>
+  <text class="footl" x="56" y="588">Nothing leaves your hardware</text>
+  <text class="footr" x="1144" y="588" text-anchor="end">Apache-2.0 · self-hosted</text>
+</svg>

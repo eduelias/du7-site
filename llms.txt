@@ -21,6 +21,16 @@
   async client for AWS IoT Greengrass v2 component IPC (Unix-domain-socket
   eventstream). No C/FFI; tokio-based; implements operations the official
   bindings lack. On crates.io as `greengrass-ipc`. Not affiliated with Amazon.
+- [famulus](https://github.com/eduelias/famulus): Self-hosted personal AI
+  assistant on WhatsApp. FastAPI webhook on the official WhatsApp Business
+  Cloud API (HMAC-verified), agent loop over a local LLM via Ollama, built-in
+  web search (self-hosted SearXNG) and weather (Open-Meteo). Actions that send,
+  publish or change state are gated behind owner confirmation. Plugin ecosystem
+  via Python entry points — official plugins:
+  [famulus-google](https://github.com/eduelias/famulus-google) (Gmail),
+  [famulus-msgraph](https://github.com/eduelias/famulus-msgraph) (Outlook),
+  [famulus-linkedin](https://github.com/eduelias/famulus-linkedin) (posting).
+  Apache-2.0.
 - [bucket-search](https://github.com/eduelias/bucket-search): TypeScript npm
   package (`@eduelias/bucket-search`) that runs SQL queries across entire S3
   buckets via S3 Select, sequentially or simultaneously. MIT licensed.

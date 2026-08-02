@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Du7 Technology Services</title>
-  <meta name="description" content="Du7 Technology Services — pragmatic engineering for infrastructure, cloud, and IoT. Home of rittenregistratie-bot, nucleus-job-plugin, and greengrass-ipc.">
+  <meta name="description" content="Du7 Technology Services — pragmatic engineering for infrastructure, cloud, and IoT. Home of rittenregistratie-bot, nucleus-job-plugin, greengrass-ipc, and famulus.">
   <link rel="canonical" href="https://du7.dev/">
   <script type="application/ld+json">
   {
@@ -42,6 +42,14 @@
         "codeRepository": "https://github.com/eduelias/greengrass-ipc",
         "programmingLanguage": "Rust",
         "description": "Pure-Rust async client for AWS IoT Greengrass v2 component IPC."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "famulus",
+        "codeRepository": "https://github.com/eduelias/famulus",
+        "programmingLanguage": "Python",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "description": "Self-hosted personal AI assistant on WhatsApp, running a local LLM with owner-confirmed actions and a plugin ecosystem."
       },
       {
         "@type": "SoftwareSourceCode",
@@ -219,6 +227,17 @@
           <p>A pure-Rust, async client for AWS IoT Greengrass v2 component IPC. No C, no FFI — just
           tokio and typed operations, including ones the official bindings are missing. Safe to call
           from inside subscription callbacks, where the official SDK is not.</p>
+        </div>
+      </a>
+      <a class="card" href="https://github.com/eduelias/famulus">
+        <img src="assets/famulus.svg" alt="famulus — a self-hosted personal AI assistant on WhatsApp" loading="lazy">
+        <div class="card-body">
+          <span class="kind">Python · WhatsApp · LLM</span>
+          <h3>famulus</h3>
+          <p>A self-hosted personal AI assistant reached over WhatsApp, running on your own
+          hardware: a local LLM through Ollama, web search via your own SearXNG, and a plugin
+          ecosystem for Gmail, Outlook and LinkedIn. Anything that sends, publishes or changes
+          state waits for your explicit confirmation first.</p>
         </div>
       </a>
       <a class="card" href="https://github.com/eduelias/bucket-search">

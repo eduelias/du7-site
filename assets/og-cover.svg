@@ -1,0 +1,57 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Du7 Technology Services — pragmatic engineering for infrastructure, cloud and IoT">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0E0C"/>
+      <stop offset="0.55" stop-color="#0D1712"/>
+      <stop offset="1" stop-color="#16281F"/>
+    </linearGradient>
+    <style>
+      .mark    { font: 700 24px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #4ADE80; letter-spacing: 8px; }
+      .title   { font: 700 76px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #FFFFFF; }
+      .tagline { font: 400 30px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #CFE3D8; }
+      .cat     { font: 700 19px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #4ADE80; letter-spacing: 2.5px; }
+      .proj    { font: 400 23px ui-monospace, 'SF Mono', Menlo, monospace; fill: #E8F0EB; }
+      .footl   { font: 700 21px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #8FAE9E; }
+      .footr   { font: 400 21px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #7E8F87; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- header -->
+  <text class="mark" x="60" y="78">DU7.DEV</text>
+  <text class="title" x="56" y="162">Du7 Technology Services</text>
+  <text class="tagline" x="60" y="214">Pragmatic engineering for infrastructure, cloud, and IoT —</text>
+  <text class="tagline" x="60" y="254">from Raspberry Pi to AWS.</text>
+
+  <line x1="60" y1="300" x2="1140" y2="300" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2"/>
+
+  <!-- three highlight columns -->
+  <g>
+    <text class="cat"  x="60" y="352">AUTOMATION &amp; ASSISTANTS</text>
+    <text class="proj" x="60" y="398">rittenregistratie-bot</text>
+    <text class="proj" x="60" y="436">famulus</text>
+  </g>
+  <g>
+    <text class="cat"  x="460" y="352">IOT &amp; EDGE</text>
+    <text class="proj" x="460" y="398">greengrass-ipc</text>
+    <text class="proj" x="460" y="436">nucleus-job-plugin</text>
+  </g>
+  <g>
+    <text class="cat"  x="840" y="352">DEVELOPER TOOLS</text>
+    <text class="proj" x="840" y="398">bucket-search</text>
+    <text class="proj" x="840" y="436">gha-vacuum</text>
+  </g>
+
+  <!-- accent underlines per column -->
+  <g stroke="#4ADE80" stroke-width="3" stroke-opacity="0.55">
+    <path d="M60 368 H300"/>
+    <path d="M460 368 H620"/>
+    <path d="M840 368 H1060"/>
+  </g>
+
+  <!-- footer -->
+  <line x1="60" y1="530" x2="1140" y2="530" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2"/>
+  <text class="footl" x="60" y="580">Open source · self-hosted · Netherlands</text>
+  <text class="footr" x="1140" y="580" text-anchor="end">info@du7.dev · KVK 91476003</text>
+</svg>

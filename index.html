@@ -6,6 +6,28 @@
   <title>Du7 Technology Services</title>
   <meta name="description" content="Du7 Technology Services — pragmatic engineering for infrastructure, cloud, and IoT. Home of rittenregistratie-bot, nucleus-job-plugin, greengrass-ipc, and famulus.">
   <link rel="canonical" href="https://du7.dev/">
+
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#0a0e0c">
+
+  <!-- Open Graph / Twitter (link previews) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Du7 Technology Services">
+  <meta property="og:url" content="https://du7.dev/">
+  <meta property="og:title" content="Du7 Technology Services">
+  <meta property="og:description" content="Pragmatic engineering for infrastructure, cloud, and IoT — from Raspberry Pi to AWS. Open-source projects across automation, IoT and developer tooling.">
+  <meta property="og:image" content="https://du7.dev/assets/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Du7 Technology Services — projects across automation, IoT and developer tooling.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Du7 Technology Services">
+  <meta name="twitter:description" content="Pragmatic engineering for infrastructure, cloud, and IoT — from Raspberry Pi to AWS.">
+  <meta name="twitter:image" content="https://du7.dev/assets/og-cover.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -197,7 +219,7 @@
       <p class="tagline">Pragmatic engineering for infrastructure, cloud, and IoT — from Raspberry Pi to AWS.</p>
     </div>
 
-    <h2>Projects</h2>
+    <h2>Automation &amp; assistants</h2>
     <div class="projects">
       <a class="card" href="https://github.com/eduelias/rittenregistratie-bot">
         <img src="assets/rittenregistratie-bot.svg" alt="rittenregistratie-bot — log your car trips over WhatsApp" loading="lazy">
@@ -209,6 +231,21 @@
           per-year Excel file and replies with a summary. Runs comfortably on a Raspberry Pi.</p>
         </div>
       </a>
+      <a class="card" href="https://github.com/eduelias/famulus">
+        <img src="assets/famulus.svg" alt="famulus — a self-hosted personal AI assistant on WhatsApp" loading="lazy">
+        <div class="card-body">
+          <span class="kind">Python · WhatsApp · LLM</span>
+          <h3>famulus</h3>
+          <p>A self-hosted personal AI assistant reached over WhatsApp, running on your own
+          hardware: a local LLM through Ollama, web search via your own SearXNG, and a plugin
+          ecosystem for Gmail, Outlook and LinkedIn. Anything that sends, publishes or changes
+          state waits for your explicit confirmation first.</p>
+        </div>
+      </a>
+    </div>
+
+    <h2>IoT &amp; edge</h2>
+    <div class="projects">
       <a class="card" href="https://github.com/eduelias/nucleus-job-plugin">
         <img src="assets/nucleus-job-plugin.jpg" alt="nucleus-job-plugin — AWS IoT Jobs execution for Greengrass" loading="lazy">
         <div class="card-body">
@@ -229,17 +266,10 @@
           from inside subscription callbacks, where the official SDK is not.</p>
         </div>
       </a>
-      <a class="card" href="https://github.com/eduelias/famulus">
-        <img src="assets/famulus.svg" alt="famulus — a self-hosted personal AI assistant on WhatsApp" loading="lazy">
-        <div class="card-body">
-          <span class="kind">Python · WhatsApp · LLM</span>
-          <h3>famulus</h3>
-          <p>A self-hosted personal AI assistant reached over WhatsApp, running on your own
-          hardware: a local LLM through Ollama, web search via your own SearXNG, and a plugin
-          ecosystem for Gmail, Outlook and LinkedIn. Anything that sends, publishes or changes
-          state waits for your explicit confirmation first.</p>
-        </div>
-      </a>
+    </div>
+
+    <h2>Developer tools</h2>
+    <div class="projects">
       <a class="card" href="https://github.com/eduelias/bucket-search">
         <img src="assets/bucket-search.svg" alt="bucket-search — query entire S3 buckets with SQL" loading="lazy">
         <div class="card-body">

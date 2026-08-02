@@ -40,6 +40,13 @@
   Zero-setup Docker container with Jupyter and OpenCV for students; one script,
   works on macOS, Linux, and Windows. MIT licensed.
 
+## Legal
+
+- [Privacy policy](https://du7.dev/privacy): covers du7.dev and the Du7 AI Assistant
+  WhatsApp bot. Self-hosted; the language model runs on own hardware, so message
+  content is not sent to any third-party AI provider. No cookies or analytics on the
+  site. Controller: Du7 Technology Services (KVK 91476003, Netherlands).
+
 ## Contact
 
 - Email: info@du7.dev

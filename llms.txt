@@ -12,6 +12,14 @@
   (Dutch "rittenregistratie"). Python 3.11+, runs on a Raspberry Pi, writes
   audit-ready per-year Excel files, plugin system for odometer/trajectory
   sources. MIT licensed.
+- [freebell-bk7258](https://github.com/eduelias/freebell-bk7258): Open
+  firmware for the Tuya "Smart Visual Doorbell" (Beken BK7258, board
+  IP108_MAIN_V05) that shipped without a Tuya licence and could never be
+  paired. Built on Beken's open Armino SDK: ring/motion webhooks to Home
+  Assistant, RTSP H.264 video, full-duplex audio with echo cancellation,
+  deep sleep on battery, microSD, OTA updates with a boot-loop rescue mode,
+  and a board-profile layer for other BK7258 boards. Reverse-engineered from
+  the stock flash image. Apache-2.0. Not affiliated with Tuya or Beken.
 - [nucleus-job-plugin](https://github.com/eduelias/nucleus-job-plugin):
   Unofficial Rust runner for AWS IoT Jobs on Greengrass v2 devices. Executes
   allow-listed job handlers and reports status, reaching IoT Core through the

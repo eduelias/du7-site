@@ -1,0 +1,6 @@
+# How to report a security problem in anything Du7 Technology Services runs or publishes
+# (du7.dev, its subdomains, and the projects linked from https://du7.dev). RFC 9116.
+Contact: mailto:info@du7.dev
+Expires: 2027-10-31T00:00:00.000Z
+Preferred-Languages: en, nl, pt
+Canonical: https://du7.dev/.well-known/security.txt

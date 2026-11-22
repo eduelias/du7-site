@@ -1,17 +1,46 @@
 # Du7 Technology Services
 
-> Independent engineering business (Netherlands, KVK 91476003) doing pragmatic
-> infrastructure, cloud, and IoT work — from Raspberry Pi to AWS. Contact:
-> info@du7.dev. This site is a temporary landing page; the projects below are
-> the best representation of the work.
+> Independent engineering business in the Netherlands (KVK 91476003), run by one
+> engineer. It builds and runs two software products, rrbot.nl and Pauta, publishes
+> open-source tools for IoT, cloud and automation, and takes engineering work on
+> infrastructure, cloud and IoT, from Raspberry Pi to AWS. Contact: info@du7.dev.
 
-## Projects
+## Products
+
+- [rrbot.nl](https://rrbot.nl): WhatsApp trip log (Dutch "rittenregistratie") for
+  people who drive a company car in the Netherlands, mainly holders of the
+  "Verklaring geen privégebruik auto". One message per trip (odometer reading and
+  destination); on request the bot sends a per-year Excel with the fields the
+  Belastingdienst asks per trip. Paid subscription (monthly or yearly) with a 14-day
+  free trial; VAT invoices per payment. Site in Dutch with an English version at
+  /en/. The core is the open-source rittenregistratie-bot below. Not tax advice.
+- [Pauta](https://www.pauta.cc): request queue ("fila de pedidos") for small
+  Brazilian teams that run Meta ads for several clients. Each request has a
+  briefing, budget and deadline and moves across a board; each client shows its
+  Meta campaigns, ad balance and monthly payment. Passkey sign-in, by invitation.
+  Web app in Brazilian Portuguese at app.pauta.cc; closed beta, no payments yet.
+  Flat price per team planned.
+- [Dominion Archive](https://dom.du7.dev): catalogue of every Dominion set and card
+  with ratings and a public Game Night randomizer; with a passkey account it tracks
+  owned printings, storage boxes and pull lists, and friends can rate by invite.
+  Unofficial fan project; Dominion is a trademark of Rio Grande Games.
+
+## Open source
 
 - [rittenregistratie-bot](https://github.com/eduelias/rittenregistratie-bot):
-  Self-hosted WhatsApp bot keeping a Belastingdienst-compliant car trip log
-  (Dutch "rittenregistratie"). Python 3.11+, runs on a Raspberry Pi, writes
-  audit-ready per-year Excel files, plugin system for odometer/trajectory
-  sources. MIT licensed.
+  Self-hosted WhatsApp bot keeping a Belastingdienst-compliant car trip log in an
+  append-only ledger; per-year Excel generated on request. Python 3.11+, runs on a
+  Raspberry Pi, plugin system for trajectory and event sources. MIT licensed.
+- [rittenregistratie-homeassistant](https://github.com/eduelias/rittenregistratie-homeassistant):
+  Home Assistant plugin for the bot: when the car's ignition goes off, Home Assistant
+  posts odometer and position and the trip is logged automatically.
+- [famulus](https://github.com/eduelias/famulus): Self-hosted personal AI
+  assistant on WhatsApp. FastAPI webhook on the official WhatsApp Business
+  Cloud API (HMAC-verified), agent loop over a local LLM via Ollama, built-in
+  web search (self-hosted SearXNG) and weather (Open-Meteo). Actions that send,
+  publish or change state are gated behind owner confirmation. Plugin ecosystem
+  via Python entry points: Gmail, Outlook, Home Assistant, LinkedIn, Overseerr,
+  budget, shell and more. Apache-2.0.
 - [freebell-bk7258](https://github.com/eduelias/freebell-bk7258): Open
   firmware for the Tuya "Smart Visual Doorbell" (Beken BK7258, board
   IP108_MAIN_V05) that shipped without a Tuya licence and could never be
@@ -29,16 +58,6 @@
   async client for AWS IoT Greengrass v2 component IPC (Unix-domain-socket
   eventstream). No C/FFI; tokio-based; implements operations the official
   bindings lack. On crates.io as `greengrass-ipc`. Not affiliated with Amazon.
-- [famulus](https://github.com/eduelias/famulus): Self-hosted personal AI
-  assistant on WhatsApp. FastAPI webhook on the official WhatsApp Business
-  Cloud API (HMAC-verified), agent loop over a local LLM via Ollama, built-in
-  web search (self-hosted SearXNG) and weather (Open-Meteo). Actions that send,
-  publish or change state are gated behind owner confirmation. Plugin ecosystem
-  via Python entry points — official plugins:
-  [famulus-google](https://github.com/eduelias/famulus-google) (Gmail),
-  [famulus-msgraph](https://github.com/eduelias/famulus-msgraph) (Outlook),
-  [famulus-linkedin](https://github.com/eduelias/famulus-linkedin) (posting).
-  Apache-2.0.
 - [bucket-search](https://github.com/eduelias/bucket-search): TypeScript npm
   package (`@eduelias/bucket-search`) that runs SQL queries across entire S3
   buckets via S3 Select, sequentially or simultaneously. MIT licensed.
@@ -47,6 +66,9 @@
 - [docker-jupyter-opencv](https://github.com/eduelias/docker-jupyter-opencv):
   Zero-setup Docker container with Jupyter and OpenCV for students; one script,
   works on macOS, Linux, and Windows. MIT licensed.
+- [valheim-character-worlds](https://github.com/eduelias/valheim-character-worlds):
+  Client-side BepInEx mod for Valheim that shows, on the character select screen,
+  every world a character has played (explored area, beds, deaths). On Thunderstore.
 
 ## Legal
 
@@ -54,8 +76,11 @@
   WhatsApp bot. Self-hosted; the language model runs on own hardware, so message
   content is not sent to any third-party AI provider. No cookies or analytics on the
   site. Controller: Du7 Technology Services (KVK 91476003, Netherlands).
+  rrbot.nl and Pauta publish their own terms and privacy pages.
 
 ## Contact
 
 - Email: info@du7.dev
 - GitHub: https://github.com/eduelias
+- Blog: https://blog.du7.dev
+- LinkedIn: https://www.linkedin.com/company/du7/

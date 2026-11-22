@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Du7 Technology Services</title>
-  <meta name="description" content="Du7 Technology Services — pragmatic engineering for infrastructure, cloud, and IoT. Home of rittenregistratie-bot, nucleus-job-plugin, greengrass-ipc, and famulus.">
+  <meta name="description" content="Du7 Technology Services runs rrbot.nl (a WhatsApp trip log for company-car drivers in the Netherlands) and Pauta (a request queue for small Meta-ads teams in Brazil), and publishes open-source tools for IoT, cloud and automation. One engineer in the Netherlands.">
   <link rel="canonical" href="https://du7.dev/">
 
   <!-- Icons -->
@@ -18,7 +18,7 @@
   <meta property="og:site_name" content="Du7 Technology Services">
   <meta property="og:url" content="https://du7.dev/">
   <meta property="og:title" content="Du7 Technology Services">
-  <meta property="og:description" content="Pragmatic engineering for infrastructure, cloud, and IoT — from Raspberry Pi to AWS. Open-source projects across automation, IoT and developer tooling.">
+  <meta property="og:description" content="rrbot.nl, Pauta and a shelf of open-source tools for IoT, cloud and automation. Built and run by one engineer in the Netherlands, from Raspberry Pi to AWS.">
   <meta property="og:image" content="https://du7.dev/assets/og-cover.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -26,7 +26,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Du7 Technology Services">
-  <meta name="twitter:description" content="Pragmatic engineering for infrastructure, cloud, and IoT — from Raspberry Pi to AWS.">
+  <meta name="twitter:description" content="rrbot.nl, Pauta and a shelf of open-source tools. Built and run by one engineer in the Netherlands.">
   <meta name="twitter:image" content="https://du7.dev/assets/og-cover.png">
   <script type="application/ld+json">
   {
@@ -41,15 +41,63 @@
       "value": "91476003"
     },
     "address": { "@type": "PostalAddress", "addressCountry": "NL" },
-    "sameAs": ["https://github.com/eduelias"],
-    "knowsAbout": ["infrastructure", "cloud", "AWS IoT Greengrass", "Rust", "Python", "Raspberry Pi"],
+    "sameAs": ["https://github.com/eduelias", "https://www.linkedin.com/company/du7/", "https://blog.du7.dev/"],
+    "knowsAbout": ["infrastructure", "cloud", "AWS IoT Greengrass", "WhatsApp Business Cloud API", "Home Assistant", "Rust", "Python", "Raspberry Pi"],
     "owns": [
+      {
+        "@type": "WebApplication",
+        "name": "rrbot.nl",
+        "url": "https://rrbot.nl/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "WhatsApp",
+        "inLanguage": ["nl", "en"],
+        "description": "WhatsApp trip log (rittenregistratie) for company-car drivers in the Netherlands; sends a Belastingdienst-ready Excel on request. Paid subscription with a 14-day trial."
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Pauta",
+        "url": "https://www.pauta.cc/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "pt-BR",
+        "description": "Request queue for small Brazilian teams that run Meta ads for several clients: briefing, deadline and board per client, with the client's campaigns, ad balance and monthly payment. Closed beta."
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Dominion Archive",
+        "url": "https://dom.du7.dev/",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Web",
+        "description": "Catalogue of every Dominion set and card with ratings and a Game Night randomizer; tracks which printings an account owns and where each pile is stored. Unofficial fan project."
+      },
       {
         "@type": "SoftwareSourceCode",
         "name": "rittenregistratie-bot",
         "codeRepository": "https://github.com/eduelias/rittenregistratie-bot",
         "programmingLanguage": "Python",
-        "description": "Self-hosted WhatsApp bot keeping a Belastingdienst-compliant car trip log."
+        "description": "Self-hosted WhatsApp bot keeping a Belastingdienst-compliant car trip log; the open-source core of rrbot.nl."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "rittenregistratie-homeassistant",
+        "codeRepository": "https://github.com/eduelias/rittenregistratie-homeassistant",
+        "programmingLanguage": "Python",
+        "description": "Home Assistant plugin for rittenregistratie-bot: logs a trip automatically when the car's ignition goes off."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "famulus",
+        "codeRepository": "https://github.com/eduelias/famulus",
+        "programmingLanguage": "Python",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "description": "Self-hosted personal AI assistant on WhatsApp, running a local LLM with owner-confirmed actions and a plugin ecosystem."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "freebell-bk7258",
+        "codeRepository": "https://github.com/eduelias/freebell-bk7258",
+        "programmingLanguage": "C",
+        "description": "Open firmware for a Tuya video doorbell on the Beken BK7258: local-only Home Assistant doorbell with RTSP, two-way audio and OTA."
       },
       {
         "@type": "SoftwareSourceCode",
@@ -64,14 +112,6 @@
         "codeRepository": "https://github.com/eduelias/greengrass-ipc",
         "programmingLanguage": "Rust",
         "description": "Pure-Rust async client for AWS IoT Greengrass v2 component IPC."
-      },
-      {
-        "@type": "SoftwareSourceCode",
-        "name": "famulus",
-        "codeRepository": "https://github.com/eduelias/famulus",
-        "programmingLanguage": "Python",
-        "license": "https://www.apache.org/licenses/LICENSE-2.0",
-        "description": "Self-hosted personal AI assistant on WhatsApp, running a local LLM with owner-confirmed actions and a plugin ecosystem."
       },
       {
         "@type": "SoftwareSourceCode",
@@ -91,6 +131,13 @@
         "name": "docker-jupyter-opencv",
         "codeRepository": "https://github.com/eduelias/docker-jupyter-opencv",
         "description": "Zero-setup Docker container with Jupyter and OpenCV for students."
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "valheim-character-worlds",
+        "codeRepository": "https://github.com/eduelias/valheim-character-worlds",
+        "programmingLanguage": "C#",
+        "description": "Valheim mod that shows every world a character has played on the character select screen."
       }
     ]
   }
@@ -134,6 +181,22 @@
       font-size: 1.1rem;
       color: var(--muted);
       line-height: 1.6;
+      max-width: 44rem;
+      margin: 0 auto;
+    }
+    .row-title {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.4rem;
+    }
+    .row-lead {
+      text-align: center;
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 40rem;
+      margin: 0 auto 1.75rem;
     }
     /* category headings are carried by the banner artwork; keep the text
        for screen readers and search engines */
@@ -142,7 +205,7 @@
       margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
       border: 0;
     }
-    .categories {
+    .products, .categories {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
@@ -162,7 +225,8 @@
       gap: 1.25rem;
     }
     @media (max-width: 900px) {
-      .categories { grid-template-columns: 1fr; gap: 3rem; }
+      .products, .categories { grid-template-columns: 1fr; gap: 2rem; }
+      .categories { gap: 3rem; }
     }
     .card {
       background: var(--surface);
@@ -201,6 +265,15 @@
     }
     .card p { color: var(--muted); line-height: 1.7; font-size: 0.95rem; }
     .card code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.88em; color: var(--text); }
+    .also {
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.8;
+      font-size: 0.95rem;
+      max-width: 44rem;
+      margin: -1.5rem auto 3.5rem;
+    }
+    .also a { color: var(--accent); }
     .contact { text-align: center; margin-bottom: 1rem; }
     .contact a {
       display: inline-block;
@@ -232,9 +305,54 @@
     <div class="hero">
       <div class="mark">du7.dev</div>
       <h1>Du7 Technology Services</h1>
-      <p class="tagline">Pragmatic engineering for infrastructure, cloud, and IoT — from Raspberry Pi to AWS.</p>
+      <p class="tagline">A WhatsApp trip log for drivers in the Netherlands, a request queue for ad teams in
+      Brazil, and a shelf of open-source tools. Built and run by one engineer in the Netherlands,
+      from Raspberry Pi to AWS.</p>
     </div>
 
+    <h2 class="row-title">Products</h2>
+    <p class="row-lead">Run by Du7 on its own servers in the Netherlands. The maker answers the email.</p>
+    <div class="products">
+      <a class="card" href="https://rrbot.nl/">
+        <img src="assets/rrbot.svg" alt="rrbot.nl — your trip log, simply over WhatsApp" loading="lazy">
+        <div class="card-body">
+          <span class="kind">WhatsApp · subscription · NL</span>
+          <h3>rrbot.nl</h3>
+          <p>A trip log (rittenregistratie) for people who drive a company car in the Netherlands.
+          After each trip you message the odometer reading and destination; the bot answers with a
+          thumbs-up and, when you ask, sends the year's Excel with exactly the fields the Belastingdienst
+          wants per trip. Fourteen days free, then a monthly subscription you can cancel any month.
+          The core is the open-source rittenregistratie-bot below.</p>
+        </div>
+      </a>
+      <a class="card" href="https://www.pauta.cc/">
+        <img src="assets/pauta.svg" alt="Pauta — the request queue for your marketing team" loading="lazy">
+        <div class="card-body">
+          <span class="kind">Web app · closed beta · BR</span>
+          <h3>Pauta</h3>
+          <p>The request queue for small Brazilian teams that run Meta ads for several clients. Whoever
+          talks to the client files the request with briefing, budget and deadline; whoever runs the ads
+          moves it across the board, and each client's campaigns, ad balance and monthly payment sit on
+          the same page. Sign-in by passkey, by invitation. In Brazilian Portuguese, in closed beta at
+          pauta.cc.</p>
+        </div>
+      </a>
+      <a class="card" href="https://dom.du7.dev/">
+        <img src="assets/dominion-archive.svg" alt="Dominion Archive — every set and card, your own boxes, and tonight's kingdom" loading="lazy">
+        <div class="card-body">
+          <span class="kind">Web app · fan project</span>
+          <h3>Dominion Archive</h3>
+          <p>A catalogue of every Dominion set and card, with ratings and a Game Night randomizer anyone
+          can use. With an account it also tracks the printings you own, which box each pile sits in,
+          and the pull list for tonight's kingdom. Accounts are passkeys; friends join by invite and rate
+          alongside you. A fan project, unaffiliated with Rio Grande Games.</p>
+        </div>
+      </a>
+    </div>
+
+    <h2 class="row-title">Open source</h2>
+    <p class="row-lead">The tools behind the products, and the ones built along the way. All on
+    <a href="https://github.com/eduelias" style="color: var(--accent)">GitHub</a>.</p>
     <div class="categories">
       <section>
         <h2 class="sr-only">Automation &amp; assistants</h2>
@@ -243,11 +361,12 @@
       <a class="card" href="https://github.com/eduelias/rittenregistratie-bot">
         <img src="assets/rittenregistratie-bot.svg" alt="rittenregistratie-bot — log your car trips over WhatsApp" loading="lazy">
         <div class="card-body">
-          <span class="kind">Python · WhatsApp</span>
+          <span class="kind">Python · WhatsApp · MIT</span>
           <h3>rittenregistratie-bot</h3>
-          <p>A self-hosted WhatsApp bot that keeps a Belastingdienst-compliant trip log for one or
-          more cars. Send an odometer reading and destination; it appends an audit-ready row to a
-          per-year Excel file and replies with a summary. Runs comfortably on a Raspberry Pi.</p>
+          <p>The open-source core of rrbot.nl: a self-hosted WhatsApp bot that keeps a
+          Belastingdienst-compliant trip log for one or more cars in an append-only ledger and generates
+          the per-year Excel on request. It never invents or reclassifies a trip. A companion plugin logs
+          trips from Home Assistant when the car's ignition goes off. Runs comfortably on a Raspberry Pi.</p>
         </div>
       </a>
       <a class="card" href="https://github.com/eduelias/famulus">
@@ -256,9 +375,9 @@
           <span class="kind">Python · WhatsApp · LLM</span>
           <h3>famulus</h3>
           <p>A self-hosted personal AI assistant reached over WhatsApp, running on your own
-          hardware: a local LLM through Ollama, web search via your own SearXNG, and a plugin
-          ecosystem for Gmail, Outlook and LinkedIn. Anything that sends, publishes or changes
-          state waits for your explicit confirmation first.</p>
+          hardware: a local LLM through Ollama, web search via your own SearXNG, and plugins for
+          Gmail, Outlook, Home Assistant, LinkedIn, Overseerr and whatever you write yourself.
+          Anything that sends, publishes or changes state waits for your explicit confirmation first.</p>
         </div>
       </a>
         </div>
@@ -336,6 +455,14 @@
       </section>
     </div>
 
+    <p class="also">Also on GitHub:
+      <a href="https://github.com/eduelias/rittenregistratie-homeassistant">rittenregistratie-homeassistant</a>,
+      the Home Assistant plugin that logs a trip when the ignition goes off, and
+      <a href="https://github.com/eduelias/valheim-character-worlds">valheim-character-worlds</a>,
+      a Valheim mod that shows every world a character has played on the character select screen
+      (on Thunderstore). Longer write-ups are on the <a href="https://blog.du7.dev/">engineering blog</a>.
+    </p>
+
     <div class="contact">
       <a href="mailto:info@du7.dev">info@du7.dev</a>
     </div>
@@ -343,9 +470,13 @@
   <footer>
     Du7 Technology Services &middot; KVK 91476003 &middot;
     <a href="mailto:info@du7.dev">info@du7.dev</a> &middot;
-    <a href="/privacy">Privacy</a><br>
+    <a href="/privacy">Privacy</a> &middot;
+    <a href="https://blog.du7.dev/">Blog</a> &middot;
+    <a href="https://github.com/eduelias">GitHub</a> &middot;
+    <a href="https://www.linkedin.com/company/du7/">LinkedIn</a><br>
     &copy; 2026 Du7 Technology Services. AWS, IoT Greengrass and related marks belong to Amazon and
-    are used descriptively; projects are unofficial and community-maintained.
+    are used descriptively; the Greengrass projects are unofficial and community-maintained.
+    Dominion is a trademark of Rio Grande Games; Dominion Archive is a fan project.
   </footer>
 </body>
 </html>

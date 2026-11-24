@@ -97,7 +97,8 @@
         "name": "freebell-bk7258",
         "codeRepository": "https://github.com/eduelias/freebell-bk7258",
         "programmingLanguage": "C",
-        "description": "Open firmware for a Tuya video doorbell on the Beken BK7258: local-only Home Assistant doorbell with RTSP, two-way audio and OTA."
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "description": "Open firmware for a Tuya video doorbell on the Beken BK7258: local-only Home Assistant doorbell with H.264 RTSP video, two-way audio and OTA, in daily use since October 2026."
       },
       {
         "@type": "SoftwareSourceCode",
@@ -390,12 +391,14 @@
       <a class="card" href="https://github.com/eduelias/freebell-bk7258">
         <img src="assets/freebell-bk7258.svg" alt="freebell-bk7258 — open firmware for a Tuya video doorbell on the Beken BK7258" loading="lazy">
         <div class="card-body">
-          <span class="kind">C · Beken BK7258 · Home Assistant</span>
+          <span class="kind">C · Beken BK7258 · Apache-2.0</span>
           <h3>freebell-bk7258</h3>
           <p>Open firmware for a Tuya video doorbell that shipped without a licence and could never be
           paired. Replaces TuyaOS with a fully local stack: ring and motion events to Home Assistant,
-          RTSP video, two-way audio with echo cancellation, deep sleep on battery, microSD, and
-          over-the-air updates protected by a boot-loop rescue mode.</p>
+          H.264 video over RTSP, two-way audio with echo cancellation, deep sleep on battery, microSD
+          snapshots, and over-the-air updates protected by a boot-loop rescue mode. In daily use on
+          the author's own door since October 2026. A board-profile layer and a simulator with CI
+          tests are there for anyone porting it to another BK7258 board.</p>
         </div>
       </a>
       <a class="card" href="https://github.com/eduelias/nucleus-job-plugin">
